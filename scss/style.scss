@@ -1,0 +1,94 @@
+@import "bootstrap/bootstrap.scss";
+
+.jumbotron{
+    background-image: url("../images/bkg-hero-header.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.logo{
+    width: 150px;
+    margin-left: 80px;
+}
+
+ul{
+    margin-left: 200px;
+}
+
+a.nav-link{
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    
+
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Bold.ttf");
+  }
+  
+.container{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+  h1{
+    
+    font-family: "poppins";
+}
+
+
+.yellowPoint{
+    color: #ffc107;
+}
+
+.lead{
+    font-size: smaller;
+    margin: auto;
+}
+.buttons{
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn{
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.btn-link{
+    border: 2px solid white;
+
+}
+
+@mixin titleSection ($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+} 
+section{
+    color: grey;
+    text-align: center;
+    margin-top: 50px;
+}
+p{
+    font-size: smaller;
+    margin: 2px;
+}
+h3{
+    @include titleSection(#41413e, 30px, bold);
+}
+
+.projects{
+    display: flex;
+    height: 150px;
+    background-color: rgb(255, 255, 202);
+    align-items: center;
+}
+
